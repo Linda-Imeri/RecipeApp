@@ -40,7 +40,7 @@ struct RecipeDetailView: View {
                     }
                 }
             }.padding()
-        }
+        }.navigationBarTitle(recipe.name)
     }
 }
 
