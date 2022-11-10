@@ -9,7 +9,7 @@ import Foundation
 
 class DataService : Decodable{
     
-    func getLocalData() -> [Recipe] {
+    static func getLocalData() -> [Recipe] {
         let pathString = Bundle.main.path(forResource: "recipes", ofType: "json")
         
         guard pathString != nil else {
@@ -26,6 +26,7 @@ class DataService : Decodable{
                 for recipe in recipeData{
                     recipe.id = UUID()
                 }
+                return recipeData
             }catch{
                 print(error)
             }
