@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C7DA187291C9AB400C3DEC7 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DA186291C9AB400C3DEC7 /* RecipeDetailView.swift */; };
 		9CADDE6C291C83F5007B0053 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADDE6B291C83F5007B0053 /* RecipeAppApp.swift */; };
 		9CADDE6E291C83F5007B0053 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADDE6D291C83F5007B0053 /* RecipeView.swift */; };
 		9CADDE70291C83F7007B0053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CADDE6F291C83F7007B0053 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C7DA186291C9AB400C3DEC7 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		9CADDE68291C83F5007B0053 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CADDE6B291C83F5007B0053 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		9CADDE6D291C83F5007B0053 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -65,7 +67,6 @@
 				9CADDE7B291C8A89007B0053 /* Models */,
 				9CADDE7A291C8A80007B0053 /* ViewModels */,
 				9CADDE79291C8A68007B0053 /* Views */,
-				9CADDE6D291C83F5007B0053 /* RecipeView.swift */,
 				9CADDE6F291C83F7007B0053 /* Assets.xcassets */,
 				9CADDE71291C83F7007B0053 /* Preview Content */,
 			);
@@ -83,6 +84,8 @@
 		9CADDE79291C8A68007B0053 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9C7DA186291C9AB400C3DEC7 /* RecipeDetailView.swift */,
+				9CADDE6D291C83F5007B0053 /* RecipeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CADDE80291C8BD5007B0053 /* Recipe.swift in Sources */,
+				9C7DA187291C9AB400C3DEC7 /* RecipeDetailView.swift in Sources */,
 				9CADDE6E291C83F5007B0053 /* RecipeView.swift in Sources */,
 				9CADDE6C291C83F5007B0053 /* RecipeAppApp.swift in Sources */,
 				9CADDE85291C919B007B0053 /* RecipeViewModel.swift in Sources */,
