@@ -7,8 +7,18 @@
 
 import Foundation
 
-struct Recipe: Identifiable{
+class Recipe: Identifiable, Decodable{
+    
     var id: UUID?
     var name: String
-    var toppings: [String]
+    var featured: Bool
+    var description: String
+    var prepTime: String
+    var cookTime: String
+    var totalTime: String
+    var servings: Int
+    var highlights: [String]
+    var ingredients: [String]
+    var directions: [String]
+    
 }
