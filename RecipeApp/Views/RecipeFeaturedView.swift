@@ -10,25 +10,55 @@ import SwiftUI
 struct RecipeFeaturedView: View {
     @EnvironmentObject var viewModel : RecipeViewModel
     var body: some View {
-        GeometryReader{ geo in
-            TabView{
-                ForEach(0..<viewModel.recipeArray.count){ index in
-                    
-                    //Show only those that should be feautured
-                    if viewModel.recipeArray[index].featured {
+        VStack(alignment: .leading,spacing: 0){
+            Text("Featured Recipes")
+                .bold()
+                .padding(.leading)
+                .padding(.top,40)
+                .font(.largeTitle)
+            
+            GeometryReader{ geo in
+                TabView{
+                    ForEach(0..<viewModel.recipeArray.count){ index in
                         
-                        //Recipe Card
-                        Rectangle()
+                        //Show only those that should be feautured
+                        if viewModel.recipeArray[index].featured {
+                            
+                            //Recipe Card
+                            ZStack{
+                                Rectangle().foregroundColor(.white)
+                                
+                                VStack(spacing: 0){
+                                    Image(viewModel.recipeArray[index].image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .clipped()
+                                    Text(viewModel.recipeArray[index].name).padding(5)
+                                }
+
+                            }
                             .frame(width: geo.size.width - 40, height: geo.size.height - 100, alignment: .center)
-                            .cornerRadius(15)
-                            .shadow(radius: 10)
+                                .cornerRadius(15)
+                                .shadow(radius: 10)
+                        }
                     }
                 }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5),radius: 10, x: -5, y: 5)
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .shadow(radius: 10)
+            
+            VStack(alignment: .leading,spacing: 10){
+                Text("Preparation Time")
+                    .font(.headline)
+                Text("1 hour")
+                Text("Highlight")
+                    .font(.headline)
+                Text("Healthy,Healthy")
+            }
+            .padding([.leading,.bottom])
         }
+       
     }
 }
 
