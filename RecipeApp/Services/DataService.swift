@@ -23,8 +23,15 @@ class DataService : Decodable{
             
             do{
                 let recipeData = try  decoder.decode([Recipe].self, from: data)
+                
+                //Add unique IDs to recipe ingredients
                 for recipe in recipeData{
                     recipe.id = UUID()
+                    
+                    //Add unique IDs to recipe ingredients
+                    for ingredient in recipe.ingredients {
+                        ingredient.id = UUID()
+                    }
                 }
                 return recipeData
             }catch{
