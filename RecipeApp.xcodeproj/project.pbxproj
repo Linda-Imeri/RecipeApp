@@ -19,6 +19,7 @@
 		9CADDE83291C8D07007B0053 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADDE82291C8D07007B0053 /* DataService.swift */; };
 		9CADDE85291C919B007B0053 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADDE84291C919B007B0053 /* RecipeViewModel.swift */; };
 		9CC1CE9529203DB000AACBCA /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1CE9429203DB000AACBCA /* Rational.swift */; };
+		9CC1CE972920519900AACBCA /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1CE962920519900AACBCA /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9CADDE82291C8D07007B0053 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		9CADDE84291C919B007B0053 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		9CC1CE9429203DB000AACBCA /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		9CC1CE962920519900AACBCA /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				9CADDE6D291C83F5007B0053 /* RecipeView.swift */,
 				9C93AF83291DA1E00023D6E5 /* RecipeTabView.swift */,
 				9C974067291EB9B800C55567 /* RecipeFeaturedView.swift */,
+				9CC1CE962920519900AACBCA /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				9CADDE80291C8BD5007B0053 /* Recipe.swift in Sources */,
 				9C93AF84291DA1E00023D6E5 /* RecipeTabView.swift in Sources */,
+				9CC1CE972920519900AACBCA /* RecipeHighlights.swift in Sources */,
 				9CC1CE9529203DB000AACBCA /* Rational.swift in Sources */,
 				9C7DA187291C9AB400C3DEC7 /* RecipeDetailView.swift in Sources */,
 				9CADDE6E291C83F5007B0053 /* RecipeView.swift in Sources */,
