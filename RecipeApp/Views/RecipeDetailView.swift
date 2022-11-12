@@ -18,6 +18,12 @@ struct RecipeDetailView: View {
                 Image(recipe.image).resizable()
                     .scaledToFit()
                 
+                Text(recipe.name)
+                    .bold()
+                    .padding(.top,20)
+                    .padding(.leading)
+                    .font(.largeTitle)
+                
                 //MARK: Serving Size Picker
                 VStack(alignment: .leading){
                     Text("Select your serving size: ")
@@ -55,8 +61,8 @@ struct RecipeDetailView: View {
                         Text(String(index+1) + ".  " + recipe.directions[index]).padding(.bottom, 5)
                     }
                 }
-            }.padding()
-        }.navigationBarTitle(recipe.name)
+            }.padding(.horizontal)
+        }
     }
 }
 
